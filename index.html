@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedTest Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <header>
+            <h1 class="animate__animated animate__fadeInLeft">SpeedTest Pro</h1>
+            <button class="theme-toggle animate__animated animate__fadeInRight" id="theme-toggle">🌓</button>
+        </header>
+        
+        <div class="speed-test">
+            <div class="test-card animate__animated animate__fadeInUp" id="ping-test" style="animation-delay: 0.1s">
+                <h2>Ping</h2>
+                <div class="test-value">--</div>
+                <div class="test-unit">milliseconds</div>
+            </div>
+            
+            <div class="test-card animate__animated animate__fadeInUp" id="download-test" style="animation-delay: 0.2s">
+                <h2>Download</h2>
+                <div class="test-value">--</div>
+                <div class="test-unit">megabits per second</div>
+            </div>
+            
+            <div class="test-card animate__animated animate__fadeInUp" id="upload-test" style="animation-delay: 0.3s">
+                <h2>Upload</h2>
+                <div class="test-value">--</div>
+                <div class="test-unit">megabits per second</div>
+            </div>
+        </div>
+        
+        <div class="progress-container animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="controls animate__animated animate__fadeInUp" style="animation-delay: 0.5s">
+            <button class="btn" id="start-test">Start Speed Test</button>
+        </div>
+        
+        <div class="status animate__animated animate__fadeInUp" id="status" style="animation-delay: 0.6s">Ready to test your connection</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
